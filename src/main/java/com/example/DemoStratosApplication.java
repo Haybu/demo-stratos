@@ -13,6 +13,11 @@ public class DemoStratosApplication {
 		SpringApplication.run(DemoStratosApplication.class, args);
 	}
 
+    @RequestMapping("/")
+    public String home() {
+        return "Hello Home !!!";
+    }
+
     @RequestMapping("/demoapp")
     public String get() {
                return "Hello Haytham !!!";
